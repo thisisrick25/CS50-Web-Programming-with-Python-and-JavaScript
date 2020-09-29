@@ -1,15 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <title>Search</title>
+    <title>Google Search</title>
+    <link rel="icon" href="images-icos/google.ico">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-    <form action="https://google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
+    <div id="upbar">
+        <a href="google-images.html"><input class="up_button" type="button" value="Google Images"></a>
+        <a href="google-advanced.html"><input class="up_button" type="button" value="Google Advance Search"></a>
+    </div>
+    <div id="elements">
+        <div class="center_element">
+            <img id="google_logo" src="images-icos/google_logo.png" alt="logo_google">
+        </div>
+        <div class="center_element">
+            <form action="https://www.google.com/search">
+                <div class="rounded-pill" id="container_textbar">
+                    <img id="lupa" src="images-icos/lupa.png" alt="lupa">
+                    <input id="textbar" type="text" name="q">
+                </div>
+                <div class="center_element" id="button_bar">
+                    <div>
+                        <input class="down_button" type="submit" value="Google Search">
+                    </div>
+                    <div>
+                        <input class="down_button" type="submit" name="btnI" value="I'm Feeling Lucky">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
